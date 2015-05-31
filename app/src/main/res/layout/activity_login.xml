@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="18dp"
+            android:layout_weight="25"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/username"
+            android:hint="@string/hint"
+            android:layout_weight="75"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_field">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="18dp"
+            android:layout_weight="25"/>
+
+        <EditText
+            android:id="@+id/edit_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/username"
+            android:hint="@string/hint_password"
+            android:layout_weight="75"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirm_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_field">
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textSize="18dp"
+            android:layout_weight="25"/>
+
+        <EditText
+            android:id="@+id/edit_text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/username"
+            android:hint="@string/hint_confirm"
+            android:layout_weight="75"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/password_field"
+        android:layout_below="@+id/confirm_field"
+        android:text="@string/submit"
+        android:textSize="32sp" />
+
+</RelativeLayout>

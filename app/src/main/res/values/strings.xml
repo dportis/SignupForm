@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SignupForm</string>
+    <string name="submit">Submit</string>
+    <string name="hint">Please enter your username</string>
+    <string name="hint_password">Please enter your password</string>
+    <string name="hint_confirm">Confirm your password</string>
+    <string name="cancel">cancel</string>
+    <string name="password">Password:</string>
+    <string name="username">Username:</string>
+    <string name="confirm">Confirm:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
